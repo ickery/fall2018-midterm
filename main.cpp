@@ -13,7 +13,7 @@ using namespace std;
 
 bool is_char(char c, char is_char)
 {
-    if(tolower(c) == is_char){ return true; }
+    if(tolower(c) == tolower(is_char)){ return true; }
     return false;
 }
 
