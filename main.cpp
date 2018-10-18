@@ -1,5 +1,5 @@
 /**
-Description: Program that asks the user for a string and character to preform a count on the amoung of characters in the string. D
+Description: Program that asks the user for a string and character to preform a count on the amount of characters in the string. D
 Filename: main.cpp
 Author: David Serrano
 Date: 10/18/22
