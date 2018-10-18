@@ -7,15 +7,22 @@ Date:
 
 #include <iostream>
 #include <string>
+#include <ctype.h>
 
 using namespace std;
+
+bool is_char(char c, char is_char)
+{
+    if(tolower(c) == is_char){ return true; }
+    return false;
+}
 
 int char_count(string p1, char c)
 {
     int count = 0;
     for(int i = 0; i < p1.size(); i++)
     {
-    if(p1.at(i) == c){ count++;}
+         if( is_char(p1.at(i), c)){ count++;}
     }
     return count;
 }
@@ -25,9 +32,10 @@ string get_string(string prompt)
 {
     string input;
     cout << prompt;
-    cin >> input;
+    getline(cin, input);
     return input;
 }
+
 
 int main()
 { 
